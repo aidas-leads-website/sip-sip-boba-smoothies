@@ -3,6 +3,7 @@ import { Baloo_2, Nunito } from "next/font/google";
 import "./globals.css";
 import { business } from "@/lib/business";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
+import { BobaBubbles } from "@/components/BobaBubbles";
 
 const display = Baloo_2({
   subsets: ["latin"],
@@ -86,6 +87,7 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
         <LocalBusinessJsonLd />
+        <BobaBubbles />
         <a
           href="#menu"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-taro focus:px-5 focus:py-2 focus:text-white focus:shadow-pop"
